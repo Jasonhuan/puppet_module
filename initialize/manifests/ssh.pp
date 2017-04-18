@@ -1,8 +1,8 @@
 class initialize::ssh{
   file{ 'sshd_config':
-    path => '/etc/ssh/sshd_config'
+    path => '/etc/ssh/sshd_config',
     ensure => file,
-    source => 'puppet:///modules/initiaze/sshd_config',
+    source => 'puppet:///modules/initialize/sshd_config',
     notify => Service['sshd'],
   }
 
