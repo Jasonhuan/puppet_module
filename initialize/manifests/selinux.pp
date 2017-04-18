@@ -2,7 +2,7 @@ class initialize::selinux{
   file{ 'conf':
     path => '/etc/selinux/config',
     ensure => file,
-    source => 'puppet:///modules/initiaze/config',
+    source => 'puppet:///modules/initialize/config',
   }
   exec{ 'turn down selinux':
     command => 'setenforce 0',
