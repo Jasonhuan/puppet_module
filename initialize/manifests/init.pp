@@ -1,3 +1,3 @@
 class initialize{
-  include initialize::firewall, initialize::limits, initialize::ntp, initialize::somepkg, initialize::ssh, initialize::yum, initialize::selinux
+  include initialize::firewall, initialize::limits,initialize::mkdir, initialize::ntp, initialize::selinux, initialize::somepkg, initialize::ssh, initialize::yum
 }

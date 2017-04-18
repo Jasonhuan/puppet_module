@@ -1,0 +1,20 @@
+mkdir /wwwroot
+mkdir /wwwroot/soft
+mkdir /wwwroot/vhosts
+mkdir /wwwroot/vhosts/httpd
+mkdir /wwwroot/vhosts/nginx
+mkdir /wwwroot/vhosts/nginx/cache
+mkdir /wwwroot/vhosts/nginx/cache/proxy_cache_dir
+mkdir /wwwroot/vhosts/nginx/cache/proxy_temp_dir
+mkdir /wwwroot/vhosts/nginx/conf
+mkdir /wwwroot/vhosts/nginx/logs
+mkdir /wwwroot/mysql
+mkdir /wwwroot/mysql/logs
+mkdir /wwwroot/mysql/sql
+mkdir /wwwroot/mysql/sql/backup
+mkdir /wwwroot/php
+mkdir /wwwroot/php/logs
+mkdir /wwwroot/php/session
+mkdir /wwwroot/php/xdebug
+mkdir /wwwroot/web
+chmod 0777 /wwwroot -R

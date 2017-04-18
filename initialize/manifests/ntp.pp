@@ -7,6 +7,7 @@ class initialize::ntp{
     command => '/usr/sbin/ntpdate time.windows.com || /usr/sbin/ntpdate time.nist.gov',
   }
   exec{ 'cron task':
+    require => Package['ntpdate'],
     command => 'echo '*/5 * * * * /usr/sbin/ntpdate time.windows.com >/dev/null 2>&1' >>/var/spool/cron/root',
   }
 }

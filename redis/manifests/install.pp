@@ -1,5 +1,5 @@
 class redis::install{
-  package{ ['redis', 'php-pecl-redis']:
+  package{ ['redis']:
     ensure => installed,
   }
 }
