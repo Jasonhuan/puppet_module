@@ -1,6 +1,11 @@
-class initialize::selinux{
-  exec{ 'turn down selinux':
-    command => 'sed -i "s#SELINUX=enforcing#SELINUX=disabled#g" /etc/selinux/config && setenforce 0'
-    path => '/usr/bin',
+class initialize::ssh{
+  file{ 'conf':
+    path => '/etc/selinux/config'
+    ensure => file,
+    mode   => '0600',
+    source => 'puppet:///modules/initiaze/config',
+  }
+  exec{ 'setenforce 0':
+    path => '/usr/sbin',
   }
 }

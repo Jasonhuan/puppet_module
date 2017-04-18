@@ -4,9 +4,9 @@ class initialize::mkdir{
     path => '/tmp/mkdir.sh',
     source => "puppet:///modules/initialize/mkdir.sh",
   }
-  exec{'make some dirs':
+  exec{'bash /tmp/mkdir.sh':
     require => File['mkdir.sh'],
-    command => 'bash /tmp/mkdir.sh',
+    cwd     => '/tmp',
     path => '/bin',
   }
 }
