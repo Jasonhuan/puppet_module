@@ -6,6 +6,7 @@ class initialize::mkdir{
   }
   exec{'make some dirs':
     require => File['mkdir.sh'],
-    command => '/bin/bash /tmp/mkdir.sh',
+    command => 'bash /tmp/mkdir.sh',
+    path => '/bin',
   }
 }
