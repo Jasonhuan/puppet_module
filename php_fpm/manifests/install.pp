@@ -1,4 +1,4 @@
-class php-fpm::install{
+class php_fpm::install{
   package{ 'php70-php-fpm':
     ensure => installed,
   }

@@ -1,4 +1,4 @@
-class initialize::ssh{
+class initialize::selinux{
   file{ 'conf':
     path => '/etc/selinux/config',
     ensure => file,
