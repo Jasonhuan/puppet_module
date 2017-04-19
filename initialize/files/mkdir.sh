@@ -6,9 +6,8 @@ mkdir /wwwroot/vhosts/nginx
 mkdir /wwwroot/vhosts/nginx/cache
 mkdir /wwwroot/vhosts/nginx/cache/proxy_cache_dir
 mkdir /wwwroot/vhosts/nginx/cache/proxy_temp_dir
-mkdir /wwwroot/vhosts/nginx/conf
-mkdir /wwwroot/vhosts/nginx/logs
 mkdir /wwwroot/mysql
+mkdir /wwwroot/mysql/data
 mkdir /wwwroot/mysql/logs
 mkdir /wwwroot/mysql/sql
 mkdir /wwwroot/mysql/sql/backup
